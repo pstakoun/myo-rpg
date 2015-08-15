@@ -1,5 +1,3 @@
-var Myo = require('myo');
-
 var resStrs = {
 	'fist':'You punched the guy in the face (fist)!',
 	'fingers_spread':'You splattered the guy (fingersSpread)!',
