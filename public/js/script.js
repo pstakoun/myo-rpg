@@ -1,16 +1,21 @@
 var resStrs = {
-	'fist':'You punched the guy in the face (fist)!',
-	'fingers_spread':'You splattered the guy (fingersSpread)!',
-	'wave_in':'You slapped the guy from the right(waveIn)!',
-	'wave_out':'You slapped the guy from the left(waveOut)!'
+    'fist':'You punched the guy in the face (fist)!\n',
+    'fingers_spread':'You splattered the guy (fingersSpread)!\n',
+    'wave_in':'You slapped the guy from the right(waveIn)!\n',
+    'wave_out':'You slapped the guy from the left(waveOut)!\n'
 }
 
 
 Myo.connect();
+<<<<<<< HEAD
 
 Myo.onError = function() {  
         $('#console').append('No Myo found!<br>');
 }
+=======
+//Myo.setLockingPolicy('none');
+
+>>>>>>> origin/master
 
 Myo.on('fist', function(){
     console.log(resStrs.fist);
