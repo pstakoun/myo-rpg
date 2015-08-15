@@ -60,7 +60,7 @@ var story = [
 		str:"You defeated the orc!",
 		reqPose:'wave_in'
 	}
-	];
+];
 
 var enemies = [
 	{
@@ -76,5 +76,10 @@ var writeStoryScreen = function(){
 			"></img><span id='story-str'>"+story[storyIndex].str+"</span>";
 	$('#target').html(storyHtml);
 	storyIndex++;
-}
+};
 
+var progressStory = function(pose){
+	if (pose == story[storyIndex].reqPose){
+		writeStoryScreen();
+	}
+};
