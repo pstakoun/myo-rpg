@@ -5,12 +5,11 @@ var resStrs = {
     'wave_out':'You slapped the guy from the left(waveOut)!\n'
 }
 
-
-Myo.connect();
-
 Myo.onError = function() {  
     $('#console').append('No Myo found!<br>');
 };
+
+Myo.connect();
 
 Myo.on('fist', function(){
     console.log(resStrs.fist);
