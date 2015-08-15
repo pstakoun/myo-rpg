@@ -13,11 +13,7 @@ Myo.onError = function() {
 Myo.connect();
 
 $(function(){
-	Myo.on('lock', function(){
-		this.unlock(true);
-	});
-	
-    Myo.on('fist', function(){
+	Myo.on('fist', function(){
         console.log(resStrs.fist);
         $('#console').append(resStrs.fist);
         progressStory('fist');
