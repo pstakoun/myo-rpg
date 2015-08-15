@@ -11,7 +11,6 @@ Myo.onError = function() {
 };
 
 Myo.connect();
-Myo.unlock(true);
 
 $(function(){
 	Myo.on('lock', function(){
