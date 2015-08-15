@@ -8,8 +8,9 @@ var resStrs = {
 
 Myo.connect();
 
-//Myo.setLockingPolicy('none');
-
+Myo.onError = function() {  
+        $('#console').append('No Myo found!<br>');
+}
 
 Myo.on('fist', function(){
     console.log(resStrs.fist);
