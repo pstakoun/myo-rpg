@@ -9,19 +9,19 @@ var story = [
 		imgBg:'../img/bg-dungeon.jpg',
 		imgChar:'',
 		str:"...You wake up after a long sleep... (Wave in to continue).",
-		nextIndex:[2,0,0]
+		nextIndex:[2,1,1]
 	},
 	{//2
 		imgBg:'../img/bg-dungeon.jpg',
 		imgChar:'../img/char-orc.gif',
 		str:"Suddenly, an orc appears.",
-		nextIndex:[3,0,0]
+		nextIndex:[3,2,2]
 	},
 	{//3
 		imgBg:'../img/bg-dungeon.jpg',
 		imgChar:'../img/char-orc.gif',
 		str:"ORC: 'Hey you! You're not supposed to be awake!' (Wave in to continue).",
-		nextIndex:[4,0,0]
+		nextIndex:[4,3,3]
 	},
 	{//4
 		imgBg:'../img/bg-dungeon.jpg',
@@ -75,7 +75,7 @@ var story = [
 		imgBg:'../img/bg-dungeon.jpg',
 		imgChar:'',
 		str:"You made it out! But wait. You fall asleep! (wave in to continue).",
-		nextIndex:[0,0,0]
+		nextIndex:[0,12,12]
 	}
 ];
 
