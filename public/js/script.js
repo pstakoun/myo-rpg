@@ -11,6 +11,8 @@ Myo.onError = function() {
 };
 
 Myo.connect();
+Myo.setLockingPolicy("none");
+Myo.unlock("hold");
 
 $(function(){
 	Myo.on('fist', function(){
