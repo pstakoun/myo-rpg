@@ -6,6 +6,7 @@
     "start": "node server"
   },
   "dependencies": {
+	"express": "latest",
 	"myo": "latest",
     "ws": "latest"
   }
