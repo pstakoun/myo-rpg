@@ -1,9 +1,0 @@
-Welcome to MyoRPG! Swipe left to continue.
-After reading each screen, just swipe left to continue.
-...You wake up after a long sleep...
-Suddenly, an orc appears.
-ORC: "Hey you! You're not supposed to be awake!"
-You must fight it! Fist your hand to punch!
-Good job! Hit him twice more.
-One more time!
-You defeated the orc!
