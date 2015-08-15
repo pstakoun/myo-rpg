@@ -11,11 +11,11 @@ Myo.onError = function() {
 };
 
 Myo.connect();
-Myo.setLockingPolicy("none");
 Myo.unlock("hold");
 
 $(function(){
-	Myo.on('fist', function(){
+    progressStory('wave_in');
+    Myo.on('fist', function(){
         console.log(resStrs.fist);
         $('#console').append(resStrs.fist);
         progressStory('fist');
