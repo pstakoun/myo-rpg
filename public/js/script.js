@@ -6,11 +6,20 @@ var resStrs = {
 }
 
 Myo.onError = function() {  
+<<<<<<< HEAD
     $('#console').append('No Myo found!<br/>');
 };
 
 Myo.connect();
 //Myo.setLockingPolicy('none');
+=======
+    $('#console').append('No Myo found!<br>');
+	console.log('No Myo found!');
+};
+
+Myo.connect();
+console.log(Myo.lockingPolicy);
+>>>>>>> 564bc0e5cf20600978e37e9178e2ac4a7ccd1437
 
 Myo.on('fist', function(){
     console.log(resStrs.fist);
