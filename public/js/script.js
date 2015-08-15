@@ -11,11 +11,15 @@ Myo.onError = function() {
 };
 
 Myo.connect();
-//Myo.myos[0].setLockingPolicy("none");
-//Myo.myos[0].unlock("hold");
 
 $(function(){
+	
     writeStoryScreenInit();
+	
+	Myo.on('connected', function(){
+		Myo.setLockingPolicy("none");
+		this.unlock(Number.MAX_SAFE_INTEGER);
+	});
 
     Myo.on('fist', function(){
         console.log(resStrs.fist);
