@@ -1,10 +1,3 @@
-var resStrs = {
-    'fist':'You punched the guy in the face (fist)!<br/>',
-    'fingers_spread':'You splattered the guy (fingersSpread)!<br/>',
-    'wave_in':'You slapped the guy from the right(waveIn)!<br/>',
-    'wave_out':'You slapped the guy from the left(waveOut)!<br/>'
-}
-
 var story = [
 	{
 		imgBg:'../img/bg-dungeon.jpg',
