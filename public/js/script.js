@@ -9,7 +9,7 @@ var resStrs = {
 Myo.connect();
 
 Myo.onError = function() {  
-        $('#console').append('No Myo found!<br>');
+    $('#console').append('No Myo found!<br>');
 };
 
 Myo.on('fist', function(){
