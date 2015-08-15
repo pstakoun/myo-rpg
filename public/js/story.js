@@ -1,5 +1,11 @@
 var story = [
 	{
+		imgBg:'',
+		imgChar:'',
+		str:"",
+		reqPose:'wave_in'
+	},
+	{
 		imgBg:'../img/bg-dungeon.jpg',
 		imgChar:'',
 		str:"Welcome to MyoRPG! Swipe left to continue.",
@@ -33,7 +39,7 @@ var story = [
 		imgBg:'../img/bg-dungeon.jpg',
 		imgChar:'../img/char-orc.gif',
 		str:"You must fight it! Fist your hand to punch!",
-		reqPose:'fist'
+		reqPose:'wave_in'
 	},
 	{
 		imgBg:'../img/bg-dungeon.jpg',
@@ -51,7 +57,7 @@ var story = [
 		imgBg:'../img/bg-dungeon.jpg',
 		imgChar:'',
 		str:"You defeated the orc!",
-		reqPose:'wave_in'
+		reqPose:'fist'
 	}
 ];
 
@@ -65,8 +71,10 @@ var storyIndex = 0;
 
 var writeStoryScreen = function(){
 	var storyHtml = "<img id='story-bg' src='"+story[storyIndex].imgBg+
-			"'></img><img id='story-char' src='"+story[storyIndex].imgChar+
-			"></img><span id='story-str'>"+story[storyIndex].str+"</span>";
+			"' style='position: absolute; left: 0; top: 0;'></img>"+
+			"<img id='story-char' src='"+story[storyIndex].imgChar+
+			"' style='position: absolute; left: 0; top: 0;'></img>"+
+			"<span id='story-str' style='position:absolute; bottom: 20px; color: #ffffff;'>"+story[storyIndex].str+"</span>";
 	$('#target').html(storyHtml);
 	storyIndex++;
 };
