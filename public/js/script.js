@@ -5,45 +5,43 @@ var resStrs = {
     'wave_out':'You slapped the guy from the left(waveOut)!<br/>'
 }
 
-Myo.onError = function() {  
-<<<<<<< HEAD
-    $('#console').append('No Myo found!<br/>');
-};
-
-Myo.connect();
-//Myo.setLockingPolicy('none');
-=======
+Myo.onError = function() {
     $('#console').append('No Myo found!<br>');
-	console.log('No Myo found!');
+    console.log('No Myo found!');
 };
 
 Myo.connect();
-console.log(Myo.lockingPolicy);
->>>>>>> 564bc0e5cf20600978e37e9178e2ac4a7ccd1437
+//console.log(Myo.lockingPolicy);
 
-Myo.on('fist', function(){
-    console.log(resStrs.fist);
-    $('#console').append(resStrs.fist);
-    this.vibrate();
-});
-
-
-Myo.on('fingers_spread', function(){
-    console.log(resStrs.fingers_spread);
-    $('#console').append(resStrs.fingers_spread);
-    this.vibrate();
-});
+$(function(){
+    Myo.on('fist', function(){
+        console.log(resStrs.fist);
+        $('#console').append(resStrs.fist);
+        progressStory('fist');
+        this.vibrate();
+    });
 
 
-Myo.on('wave_in', function(){
-    console.log(resStrs.wave_in);
-    $('#console').append(resStrs.wave_in);
-    this.vibrate();
-});
+    Myo.on('fingers_spread', function(){
+        console.log(resStrs.fingers_spread);
+        $('#console').append(resStrs.fingers_spread);
+        progressStory('fingers_spread');
+        this.vibrate();
+    });
 
 
-Myo.on('wave_out', function(){
-    console.log(resStrs.wave_out);
-    $('#console').append(resStrs.wave_out);
-    this.vibrate();
+    Myo.on('wave_in', function(){
+        console.log(resStrs.wave_in);
+        $('#console').append(resStrs.wave_in);
+        progressStory('wave_in');
+        this.vibrate();
+    });
+
+
+    Myo.on('wave_out', function(){
+        console.log(resStrs.wave_out);
+        $('#console').append(resStrs.wave_out);
+        progressStory('wave_out');
+        this.vibrate();
+    });
 });
