@@ -7,15 +7,11 @@ var resStrs = {
 
 
 Myo.connect();
-<<<<<<< HEAD
-
 Myo.onError = function() {  
         $('#console').append('No Myo found!<br>');
 }
-=======
 //Myo.setLockingPolicy('none');
 
->>>>>>> origin/master
 
 Myo.on('fist', function(){
     console.log(resStrs.fist);
