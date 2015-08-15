@@ -8,7 +8,7 @@ var resStrs = {
 
 Myo.connect();
 
-Myo.setLockingPolicy('none');
+//Myo.setLockingPolicy('none');
 
 
 Myo.on('fist', function(){
