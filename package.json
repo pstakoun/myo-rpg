@@ -7,7 +7,6 @@
   },
   "dependencies": {
 	"express": "latest",
-	"myo": "latest",
-    "ws": "latest"
+	"myo": "latest"
   }
 }
