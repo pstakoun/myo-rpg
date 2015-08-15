@@ -114,7 +114,7 @@ var writeStoryScreen = function(pose){
 			"' style='position: absolute; left: 0; top: 0;'></img>"+
 			"<img id='story-char' src='"+story[storyIndex].imgChar+
 			"' style='position: absolute; left: 0; top: 0;'></img>"+
-			"<span id='story-str' style='position:absolute; bottom: 20px; color: #ffffff; font-family: Arial; font-size: 24px;'>"+story[storyIndex].str+"</span>";
+			"<span id='story-str' style='position:absolute; top: 10px; color: #ffffff; font-family: Arial; font-size: 24px;'>"+story[storyIndex].str+"</span>";
 	$('#target').html(storyHtml);
 };
 
