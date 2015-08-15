@@ -6,7 +6,8 @@ var resStrs = {
 }
 
 Myo.onError = function() {  
-    $('#console').append('No Myo found!<br/>');
+    $('#console').append('No Myo found!<br>');
+	console.log('No Myo found!');
 };
 
 Myo.connect();
