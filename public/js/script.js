@@ -11,7 +11,6 @@ Myo.onError = function() {
 };
 
 Myo.connect();
-Myo.setLockingPolicy('none');
 
 Myo.on('fist', function(){
     console.log(resStrs.fist);
