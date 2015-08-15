@@ -12,7 +12,7 @@
 			api_version : 3,
 			socket_url  : "ws://127.0.0.1:10138/myo/",
 		},
-		lockingPolicy : 'none',
+		lockingPolicy : 'standard',
 		events : [],
 		myos : [],
 
