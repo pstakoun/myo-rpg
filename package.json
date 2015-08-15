@@ -1,0 +1,12 @@
+{
+  "name": "myo-rpg",
+  "version": "0.0.1",
+  "description": "A RPG app using Myo.",
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+	"myo": "latest",
+    "ws": "latest"
+  }
+}
