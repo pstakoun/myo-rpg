@@ -11,9 +11,13 @@ Myo.onError = function() {
 };
 
 Myo.connect();
-Myo.setUnlockPolicy('none');
+Myo.unlock(true);
 
 $(function(){
+	Myo.on('lock', function(){
+		this.unlock(true);
+	});
+	
     Myo.on('fist', function(){
         console.log(resStrs.fist);
         $('#console').append(resStrs.fist);
