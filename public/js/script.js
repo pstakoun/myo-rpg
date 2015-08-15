@@ -15,7 +15,8 @@ Myo.connect();
 //Myo.myos[0].unlock("hold");
 
 $(function(){
-    progressStory('wave_in');
+    writeStoryScreenInit();
+
     Myo.on('fist', function(){
         console.log(resStrs.fist);
         $('#console').append(resStrs.fist);
