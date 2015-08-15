@@ -11,7 +11,8 @@ Myo.onError = function() {
 };
 
 Myo.connect();
-Myo.unlock("hold");
+Myo.myos[0].setLockingPolicy("none");
+Myo.myos[0].unlock("hold");
 
 $(function(){
     progressStory('wave_in');
