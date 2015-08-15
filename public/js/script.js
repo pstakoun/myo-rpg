@@ -13,10 +13,13 @@ Myo.onError = function() {
 Myo.connect();
 
 $(function(){
-	Myo.setLockingPolicy("none");
-	Myo.myos[0].unlock(Number.MAX_SAFE_INTEGER);
 	
     writeStoryScreenInit();
+	
+	Myo.on('connected', function(){
+		Myo.setLockingPolicy("none");
+		this.unlock(Number.MAX_SAFE_INTEGER);
+	});
 
     Myo.on('fist', function(){
         console.log(resStrs.fist);
