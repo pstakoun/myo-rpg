@@ -5,6 +5,9 @@ var resStrs = {
     'wave_out':'You slapped the guy from the left(waveOut)!<br/>'
 }
 
+Myo.onError = function() {  
+    $('#console').append('No Myo found!<br>');
+};
 
 Myo.connect();
 <<<<<<< HEAD
@@ -15,11 +18,14 @@ Myo.onError = function() {
 
 =======
 
+<<<<<<< HEAD
 Myo.onError = function() {  
         $('#console').append('No Myo found!<br>');
 }
 >>>>>>> 415033942bb89bc9b93a56a2fb7744205d6f4663
 
+=======
+>>>>>>> 841dccad3405ce2cc104e2601a703939033e4e23
 Myo.on('fist', function(){
     console.log(resStrs.fist);
     $('#console').append(resStrs.fist);
